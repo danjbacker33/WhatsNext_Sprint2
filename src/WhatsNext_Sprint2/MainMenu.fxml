@@ -11,7 +11,7 @@
     styleClass="mainFxmlClass" 
     xmlns="http://javafx.com/javafx/8.0.151" 
     xmlns:fx="http://javafx.com/fxml/1" 
-    fx:controller="WhatsNext_Sprint2.FXMLExampleController">
+    fx:controller="WhatsNext_Sprint2.LoginController">
     <stylesheets>
         <URL value="@MainMenu.css" />
     </stylesheets>
