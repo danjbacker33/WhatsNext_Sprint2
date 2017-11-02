@@ -19,6 +19,7 @@ public class LoginController {
     
     public boolean requestAuthenticate(String authUsername, String authPassword)
     {
+        System.out.println("ButtonPressed");
         for(User u:userList.getTheList())
         {
             if(authUsername.equals(u.getUsername()))
