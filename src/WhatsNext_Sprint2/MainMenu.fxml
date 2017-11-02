@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane 
+    id="AnchorPane" 
+    prefHeight="400.0" 
+    prefWidth="600.0"
+    styleClass="mainFxmlClass" 
+    xmlns="http://javafx.com/javafx/8.0.151" 
+    xmlns:fx="http://javafx.com/fxml/1" 
+    fx:controller="fxmlexample.FXMLExampleController">
+    <stylesheets>
+        <URL value="@MainMenu.css" />
+    </stylesheets>
+   <children>
+      <Button layoutX="270.0" layoutY="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Search for a Book" />
+      <Button layoutX="270.0" layoutY="100.0" mnemonicParsing="false" text="Search for a Movie" />
+      <Button layoutX="270.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Settings" />
+      <Button layoutX="270.0" layoutY="250.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Help" />
+      <Button layoutX="270.0" layoutY="300.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Log Out" />
+   </children>
+</AnchorPane>
