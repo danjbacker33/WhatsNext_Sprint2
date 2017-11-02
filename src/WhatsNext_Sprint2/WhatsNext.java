@@ -15,7 +15,7 @@ import javafx.stage.Stage;
  *
  * @author djb5755
  */
-public class FXMLExample extends Application {
+public class WhatsNext extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
