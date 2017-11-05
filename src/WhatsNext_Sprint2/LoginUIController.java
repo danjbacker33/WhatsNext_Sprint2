@@ -13,9 +13,10 @@ public class LoginUIController {
     @FXML private PasswordField password;
     
     @FXML protected void handleSubmitButtonAction(ActionEvent event) {
-        LoginController loginCtrl = new LoginController();
-        loginCtrl.requestAuthenticate(username.getText(), password.getText());
+        LoginController loginCtrl = new LoginController(this);
+        String u = username.getText();
+        String p = password.getText();
         
-        
+        loginCtrl.requestAuthenticate(u, p);       
     }
 }
