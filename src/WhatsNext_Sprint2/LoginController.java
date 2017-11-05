@@ -21,18 +21,19 @@ public class LoginController {
     }
     
     public boolean requestAuthenticate(String authUsername, String authPassword)
-    {
+    { 
         System.out.println("ButtonPressed");
         
         for(User u:userList.getTheList())
         {
+            
             if(authUsername.equals(u.getUsername()))
             {
                 System.out.println("Username checked");
                 if(authPassword.equals(u.getPassword()))
                 {
                     System.out.println("Password checked"); 
-                    /* Code to open Main Menu goes here*/
+                    
                     return true;
                 }
             }
