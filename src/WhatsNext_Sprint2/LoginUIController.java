@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.PasswordField;
 
 import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -16,6 +17,7 @@ public class LoginUIController {
     @FXML private Text actiontarget;
     @FXML private TextField username;
     @FXML private PasswordField password;
+    @FXML private GridPane pane;
     
     
     @FXML protected void handleSubmitButtonAction(ActionEvent event) {
@@ -32,10 +34,14 @@ public class LoginUIController {
             
             /* Code to open Main Menu goes here*/
             try{
+                Stage stage1 = (Stage)pane.getScene().getWindow();
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainMenu.fxml"));
                 Parent root = (Parent) fxmlLoader.load();
-                Stage stage1 = new Stage();
+                
                 Scene scene = new Scene(root, 400, 400);
+                stage1.setHeight(400);
+                stage1.setWidth(400);
+                
                 stage1.setScene(scene);
 
                 stage1.show();
