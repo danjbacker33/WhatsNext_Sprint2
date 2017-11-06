@@ -14,7 +14,7 @@
         <URL value="@createprofile.css" />
     </stylesheets>
    <children>
-      <Text fill="WHITE" text="Welcome"/>
+      <Text fill="WHITE" text="Create a Profile" layoutX="300.0" layoutY="100.0"/>
       <Button layoutX="300.0" layoutY="275.0" mnemonicParsing="false" text="Submit" />
       <PasswordField layoutX="300.0" layoutY="180.0" />
       <TextField layoutX="300.0" layoutY="130.0" />
