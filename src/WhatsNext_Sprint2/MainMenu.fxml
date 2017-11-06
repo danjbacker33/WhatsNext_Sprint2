@@ -9,6 +9,7 @@
         <URL value="@MainMenu.css" />
     </stylesheets>
    <children>
+      <Text fill="WHITE" text="Create a Profile" layoutX="300.0" layoutY="100.0"/>
       <Button layoutX="200.0" layoutY="100.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Search for a Book" />
       <Button layoutX="320.0" layoutY="100.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Search for a Movie" />
       <Button layoutX="260.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Settings" />
