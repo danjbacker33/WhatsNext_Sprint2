@@ -24,7 +24,7 @@ public class ProfileList {
     
     public void addProfile(Profile profile)
     {
-        getProfileList().add(profile);
+        profileList.add(profile);
     }
 
     public ArrayList<Profile> getProfileList() {

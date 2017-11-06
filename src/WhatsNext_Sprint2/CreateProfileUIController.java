@@ -12,6 +12,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 /**
@@ -22,12 +23,15 @@ public class CreateProfileUIController {
     @FXML private TextField username;
     @FXML private PasswordField cpassword;
     @FXML private PasswordField password;
+    @FXML private GridPane pane;
     
-    private ProfileList profileList;
     
     
     @FXML protected void handleNewProfileButtonAction(ActionEvent event) {
-        Profile profile = new Profile(username.getText(), cpassword.getText());
+        ProfileList pList = new ProfileList();
+        Profile profile1 = new Profile(username.getText(), cpassword.getText());
+        pList.addProfile(profile1);
+        
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainMenu.fxml"));
             Parent root = (Parent) fxmlLoader.load();
@@ -39,5 +43,6 @@ public class CreateProfileUIController {
         }catch(Exception e){
 
         }
+       
     }
 }

@@ -10,6 +10,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 
@@ -19,7 +20,7 @@ import javafx.stage.Stage;
  */
 public class MainMenuUIController {
     
-    
+    @FXML private GridPane pane;
     @FXML protected void handleProfileButtonAction(ActionEvent event) {
         
         
