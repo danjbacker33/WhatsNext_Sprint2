@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.151">
     <stylesheets>
-        <URL value="@createprofile.css"/>
+        <URL value="@createprofile.css" />
     </stylesheets>
+   <children>
+      <Button layoutX="300.0" layoutY="275.0" mnemonicParsing="false" text="Submit" />
+      <PasswordField layoutX="300.0" layoutY="180.0" />
+      <TextField layoutX="300.0" layoutY="130.0" />
+      <PasswordField layoutX="300.0" layoutY="230.0" />
+      <Label layoutX="180.0" layoutY="130.0" text="Username" />
+      <Label layoutX="180.0" layoutY="180.0" text="Password" />
+      <Label layoutX="180.0" layoutY="230.0" text="Confirm Password" />
+      <Hyperlink layoutX="14.0" layoutY="363.0" text="Help" textFill="#61e055" />
+   </children>
 </AnchorPane>
