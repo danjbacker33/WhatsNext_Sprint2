@@ -9,10 +9,11 @@
         <URL value="@MainMenu.css" />
     </stylesheets>
    <children>
-      <Button layoutX="270.0" layoutY="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Search for a Book" />
-      <Button layoutX="270.0" layoutY="100.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Search for a Movie" />
-      <Button layoutX="270.0" layoutY="188.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Settings" />
-      <Button layoutX="270.0" layoutY="221.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Help" />
-      <Button layoutX="270.0" layoutY="253.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Log Out" />
+      <Button layoutX="200.0" layoutY="100.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Search for a Book" />
+      <Button layoutX="320.0" layoutY="100.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Search for a Movie" />
+      <Button layoutX="260.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Settings" />
+      <Button layoutX="260.0" layoutY="250.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Help" />
+      <Button layoutX="260.0" layoutY="300.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Log Out" />
+      <Button layoutX="260.0" layoutY="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Create New Profile" />
    </children>
 </AnchorPane>
