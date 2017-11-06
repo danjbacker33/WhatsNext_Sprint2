@@ -21,12 +21,16 @@ public class WhatsNext extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
         
-        Scene scene = new Scene(root, 300, 275);
+        Scene scene = new Scene(root, 400, 275);
         
         stage.setTitle("Welcome to What's Next");
         stage.setScene(scene);
         stage.show();
+        
+        
+       
     }
+    
 
     /**
      * @param args the command line arguments

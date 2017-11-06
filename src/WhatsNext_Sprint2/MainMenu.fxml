@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="599.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WhatsNext_Sprint2.LoginController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="599.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WhatsNext_Sprint2.MainMenuUIController">
     <stylesheets>
         <URL value="@MainMenu.css" />
     </stylesheets>
@@ -16,6 +16,6 @@
       <Button layoutX="260.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Settings" />
       <Button layoutX="260.0" layoutY="250.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Help" />
       <Button layoutX="260.0" layoutY="300.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Log Out" />
-      <Button layoutX="260.0" layoutY="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Create New Profile" />
+      <Button layoutX="260.0" layoutY="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Create New Profile" onAction="#handleProfileButtonAction"/>
    </children>
 </AnchorPane>

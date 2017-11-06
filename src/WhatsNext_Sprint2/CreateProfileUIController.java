@@ -10,21 +10,26 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
 
 /**
  *
- * @author mattb
+ * @author Laura
  */
-public class MainMenuUIController {
+public class CreateProfileUIController {
+    @FXML private TextField username;
+    @FXML private PasswordField cpassword;
+    @FXML private PasswordField password;
+    
+    private ProfileList profileList;
     
     
-    @FXML protected void handleProfileButtonAction(ActionEvent event) {
-        
-        
+    @FXML protected void handleNewProfileButtonAction(ActionEvent event) {
+        Profile profile = new Profile(username.getText(), cpassword.getText());
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("CreateProfile.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainMenu.fxml"));
             Parent root = (Parent) fxmlLoader.load();
             Stage stage1 = new Stage();
             Scene scene = new Scene(root, 400, 400);
@@ -35,10 +40,4 @@ public class MainMenuUIController {
 
         }
     }
-    
-    
-
-        
-    
-    
 }

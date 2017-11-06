@@ -22,10 +22,12 @@ public class UserList {
         User user1 = new User("Test", "Test");
         User user2 = new User("testUse", "password");
         User user3 = new User("ihavealongusername", "ihaveanevenlongerpassword");
+        User user4 = new User("test", "test");
         
-        theList. add(user1);
-        theList. add(user2);
-        theList. add(user3);
+        theList.add(user1);
+        theList.add(user2);
+        theList.add(user3);
+        theList.add(user4);
         
         
     }

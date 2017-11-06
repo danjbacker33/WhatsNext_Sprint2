@@ -5,14 +5,15 @@
  */
 package WhatsNext_Sprint2;
 
-import javafx.fxml.FXML;
-
-
 /**
  *
- * @author mattb
+ * @author Laura
  */
-public class MainMenuController {
+public class CreateProfileController {
+    private ProfileList pList;
     
+    public CreateProfileController(){
+        
+    }
     
 }
