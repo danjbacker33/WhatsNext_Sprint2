@@ -10,7 +10,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.GridPane;
+import javafx.scene.layout.AnchorPane;
+
 import javafx.stage.Stage;
 
 
@@ -20,21 +21,25 @@ import javafx.stage.Stage;
  */
 public class MainMenuUIController {
     
-    @FXML private GridPane pane;
+    @FXML private AnchorPane pane;
     @FXML protected void handleProfileButtonAction(ActionEvent event) {
         
         
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("CreateProfile.fxml"));
-            Parent root = (Parent) fxmlLoader.load();
-            Stage stage1 = new Stage();
-            Scene scene = new Scene(root, 400, 400);
-            stage1.setScene(scene);
+                Stage stage1 = (Stage)pane.getScene().getWindow();
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("CreateProfile.fxml"));
+                Parent root = (Parent) fxmlLoader.load();
+                
+                Scene scene = new Scene(root, 400, 400);
+                stage1.setHeight(400);
+                stage1.setWidth(400);
+                
+                stage1.setScene(scene);
 
-            stage1.show();
-        }catch(Exception e){
-
-        }
+                stage1.show();
+            }catch(Exception e){
+                    System.out.println("Something fucked up");
+            }
     }
     
     
